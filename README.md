@@ -69,7 +69,7 @@ DATABASE_URL="mysql://YOUR_USERNAME:YOUR_PASSWORD@localhost:3306/DATABASE_NAME"
 Déployez les migrations pour initialiser la base de données :
 
 ```bash
-npx prisma migrate deploy
+npx prisma migrate dev
 ```
 
 ## Utilisation
