@@ -59,7 +59,6 @@ npm install
 Renommez le fichier .env.example en .env, puis remplissez-le avec vos informations de connexion :
 
 Exemple de fichier `.env` :
-
 ```bash
 DATABASE_URL="mysql://YOUR_USERNAME:YOUR_PASSWORD@localhost:3306/DATABASE_NAME"
 
