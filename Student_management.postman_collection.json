@@ -1,142 +1,11 @@
 {
 	"info": {
-		"_postman_id": "f874bc9d-3f45-458d-acff-b7c93b05c7da",
+		"_postman_id": "cda90378-f1d0-4ff3-952c-6f486e979f2d",
 		"name": "Student_management",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
-		"_exporter_id": "38098654",
-		"_collection_link": "https://gestion-des-tudent.postman.co/workspace/Gestion-des-%C3%A9tudent-Workspace~2822b403-e40e-4607-8dd2-36f5d58603aa/collection/38098654-f874bc9d-3f45-458d-acff-b7c93b05c7da?action=share&source=collection_link&creator=38098654"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38098585"
 	},
 	"item": [
-		{
-			"name": "auth",
-			"item": [
-				{
-					"name": "LOGIN",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"admin@admin.com\",\r\n    \"password\": \"admin1234\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "http://127.0.0.1:3000/api/login/"
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "user",
-			"item": [
-				{
-					"name": "users",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbE5hbWUiOiJBZG1pbmlzdHJhdGV1ciIsInJvbGUiOiJBZG1pbiIsInN0YXR1cyI6dHJ1ZSwiaWF0IjoxNzM0MDQ5NDc2LCJleHAiOjE3MzQwODU0NzZ9.HzA7b-E62bI_Qw1apYWw0xiboNBzE7HgpR-ZNQr5ClU"
-							}
-						},
-						"method": "GET",
-						"header": [],
-						"url": "http://127.0.0.1:3000/api/users/"
-					},
-					"response": []
-				},
-				{
-					"name": "user",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbE5hbWUiOiJBZG1pbmlzdHJhdGV1ciIsInJvbGUiOiJBZG1pbiIsInN0YXR1cyI6dHJ1ZSwiaWF0IjoxNzM0MDQ5NDc2LCJleHAiOjE3MzQwODU0NzZ9.HzA7b-E62bI_Qw1apYWw0xiboNBzE7HgpR-ZNQr5ClU"
-							}
-						},
-						"method": "GET",
-						"header": [],
-						"url": "http://127.0.0.1:3000/api/user/2"
-					},
-					"response": []
-				},
-				{
-					"name": "user",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbE5hbWUiOiJBZG1pbmlzdHJhdGV1ciIsInJvbGUiOiJBZG1pbiIsInN0YXR1cyI6dHJ1ZSwiaWF0IjoxNzM0MDQ5NDc2LCJleHAiOjE3MzQwODU0NzZ9.HzA7b-E62bI_Qw1apYWw0xiboNBzE7HgpR-ZNQr5ClU"
-							}
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"fullName\": \"Harouna\",\r\n    \"email\": \"ht@gmail.com\",\r\n    \"password\": \"12345678\",\r\n    \"role\": \"Admin\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "http://127.0.0.1:3000/api/user/"
-					},
-					"response": []
-				},
-				{
-					"name": "user",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbE5hbWUiOiJBZG1pbmlzdHJhdGV1ciIsInJvbGUiOiJBZG1pbiIsInN0YXR1cyI6dHJ1ZSwiaWF0IjoxNzM0MDQ5NDc2LCJleHAiOjE3MzQwODU0NzZ9.HzA7b-E62bI_Qw1apYWw0xiboNBzE7HgpR-ZNQr5ClU"
-							}
-						},
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"fullName\": \"Sidi\",\r\n    \"email\": \"ht@gmail.com\",\r\n    \"password\": \"12345678\",\r\n    \"role\": \"Admin\",\r\n    \"status\": false\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "http://127.0.0.1:3000/api/user/3"
-					},
-					"response": []
-				},
-				{
-					"name": "user",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbE5hbWUiOiJBZG1pbmlzdHJhdGV1ciIsInJvbGUiOiJBZG1pbiIsInN0YXR1cyI6dHJ1ZSwiaWF0IjoxNzM0MDQ5NDc2LCJleHAiOjE3MzQwODU0NzZ9.HzA7b-E62bI_Qw1apYWw0xiboNBzE7HgpR-ZNQr5ClU"
-							}
-						},
-						"method": "DELETE",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"fullName\": \"Sidi\",\r\n    \"email\": \"ht@gmail.com\",\r\n    \"password\": \"12345678\",\r\n    \"role\": \"Admin\",\r\n    \"status\": false\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "http://127.0.0.1:3000/api/user/3"
-					},
-					"response": []
-				}
-			]
-		},
 		{
 			"name": "student",
 			"item": [
@@ -148,7 +17,22 @@
 						},
 						"method": "GET",
 						"header": [],
-						"url": "http://127.0.0.1:3000/api/students/"
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/students/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"students",
+								""
+							]
+						}
 					},
 					"response": []
 				},
@@ -160,7 +44,22 @@
 						},
 						"method": "GET",
 						"header": [],
-						"url": "http://127.0.0.1:3000/api/student/1"
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/student/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"student",
+								"1"
+							]
+						}
 					},
 					"response": []
 				},
@@ -169,9 +68,13 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbE5hbWUiOiJBZG1pbmlzdHJhdGV1ciIsInJvbGUiOiJBZG1pbiIsInN0YXR1cyI6dHJ1ZSwiaWF0IjoxNzM0MDQ5NDc2LCJleHAiOjE3MzQwODU0NzZ9.HzA7b-E62bI_Qw1apYWw0xiboNBzE7HgpR-ZNQr5ClU"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbE5hbWUiOiJBZG1pbmlzdHJhdGV1ciIsInJvbGUiOiJBZG1pbiIsInN0YXR1cyI6dHJ1ZSwiaWF0IjoxNzM0MDQ5NDc2LCJleHAiOjE3MzQwODU0NzZ9.HzA7b-E62bI_Qw1apYWw0xiboNBzE7HgpR-ZNQr5ClU",
+									"type": "string"
+								}
+							]
 						},
 						"method": "POST",
 						"header": [],
@@ -184,7 +87,22 @@
 								}
 							}
 						},
-						"url": "http://127.0.0.1:3000/api/student/"
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/student/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"student",
+								""
+							]
+						}
 					},
 					"response": []
 				},
@@ -205,7 +123,22 @@
 								}
 							}
 						},
-						"url": "http://127.0.0.1:3000/api/student/3"
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/student/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"student",
+								"3"
+							]
+						}
 					},
 					"response": []
 				},
@@ -214,9 +147,13 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbE5hbWUiOiJBZG1pbmlzdHJhdGV1ciIsInJvbGUiOiJBZG1pbiIsInN0YXR1cyI6dHJ1ZSwiaWF0IjoxNzM0MDQ5NDc2LCJleHAiOjE3MzQwODU0NzZ9.HzA7b-E62bI_Qw1apYWw0xiboNBzE7HgpR-ZNQr5ClU"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbE5hbWUiOiJBZG1pbmlzdHJhdGV1ciIsInJvbGUiOiJBZG1pbiIsInN0YXR1cyI6dHJ1ZSwiaWF0IjoxNzM0MDQ5NDc2LCJleHAiOjE3MzQwODU0NzZ9.HzA7b-E62bI_Qw1apYWw0xiboNBzE7HgpR-ZNQr5ClU",
+									"type": "string"
+								}
+							]
 						},
 						"method": "DELETE",
 						"header": [],
@@ -229,7 +166,22 @@
 								}
 							}
 						},
-						"url": "http://127.0.0.1:3000/api/student/3"
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/student/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"student",
+								"3"
+							]
+						}
 					},
 					"response": []
 				}
@@ -246,7 +198,22 @@
 						},
 						"method": "GET",
 						"header": [],
-						"url": "http://127.0.0.1:3000/api/modules/"
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/modules/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"modules",
+								""
+							]
+						}
 					},
 					"response": []
 				},
@@ -258,7 +225,22 @@
 						},
 						"method": "GET",
 						"header": [],
-						"url": "http://127.0.0.1:3000/api/module/1"
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/module/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"module",
+								"1"
+							]
+						}
 					},
 					"response": []
 				},
@@ -267,9 +249,13 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbE5hbWUiOiJBZG1pbmlzdHJhdGV1ciIsInJvbGUiOiJBZG1pbiIsInN0YXR1cyI6dHJ1ZSwiaWF0IjoxNzM0MDQ5NDc2LCJleHAiOjE3MzQwODU0NzZ9.HzA7b-E62bI_Qw1apYWw0xiboNBzE7HgpR-ZNQr5ClU"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbE5hbWUiOiJBZG1pbmlzdHJhdGV1ciIsInJvbGUiOiJBZG1pbiIsInN0YXR1cyI6dHJ1ZSwiaWF0IjoxNzM0MDQ5NDc2LCJleHAiOjE3MzQwODU0NzZ9.HzA7b-E62bI_Qw1apYWw0xiboNBzE7HgpR-ZNQr5ClU",
+									"type": "string"
+								}
+							]
 						},
 						"method": "POST",
 						"header": [],
@@ -282,7 +268,22 @@
 								}
 							}
 						},
-						"url": "http://127.0.0.1:3000/api/module/"
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/module/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"module",
+								""
+							]
+						}
 					},
 					"response": []
 				},
@@ -303,7 +304,22 @@
 								}
 							}
 						},
-						"url": "http://127.0.0.1:3000/api/module/1"
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/module/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"module",
+								"1"
+							]
+						}
 					},
 					"response": []
 				},
@@ -312,9 +328,13 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbE5hbWUiOiJBZG1pbmlzdHJhdGV1ciIsInJvbGUiOiJBZG1pbiIsInN0YXR1cyI6dHJ1ZSwiaWF0IjoxNzM0MDQ5NDc2LCJleHAiOjE3MzQwODU0NzZ9.HzA7b-E62bI_Qw1apYWw0xiboNBzE7HgpR-ZNQr5ClU"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbE5hbWUiOiJBZG1pbmlzdHJhdGV1ciIsInJvbGUiOiJBZG1pbiIsInN0YXR1cyI6dHJ1ZSwiaWF0IjoxNzM0MDQ5NDc2LCJleHAiOjE3MzQwODU0NzZ9.HzA7b-E62bI_Qw1apYWw0xiboNBzE7HgpR-ZNQr5ClU",
+									"type": "string"
+								}
+							]
 						},
 						"method": "DELETE",
 						"header": [],
@@ -327,7 +347,22 @@
 								}
 							}
 						},
-						"url": "http://127.0.0.1:3000/api/module/4"
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/module/4",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"module",
+								"4"
+							]
+						}
 					},
 					"response": []
 				}
@@ -344,7 +379,22 @@
 						},
 						"method": "GET",
 						"header": [],
-						"url": "http://127.0.0.1:3000/api/registrations/"
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/registrations/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"registrations",
+								""
+							]
+						}
 					},
 					"response": []
 				},
@@ -356,7 +406,22 @@
 						},
 						"method": "GET",
 						"header": [],
-						"url": "http://127.0.0.1:3000/api/registration/1"
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/registration/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"registration",
+								"1"
+							]
+						}
 					},
 					"response": []
 				},
@@ -365,9 +430,13 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbE5hbWUiOiJBZG1pbmlzdHJhdGV1ciIsInJvbGUiOiJBZG1pbiIsInN0YXR1cyI6dHJ1ZSwiaWF0IjoxNzM0MDQ5NDc2LCJleHAiOjE3MzQwODU0NzZ9.HzA7b-E62bI_Qw1apYWw0xiboNBzE7HgpR-ZNQr5ClU"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbE5hbWUiOiJBZG1pbmlzdHJhdGV1ciIsInJvbGUiOiJBZG1pbiIsInN0YXR1cyI6dHJ1ZSwiaWF0IjoxNzM0MDQ5NDc2LCJleHAiOjE3MzQwODU0NzZ9.HzA7b-E62bI_Qw1apYWw0xiboNBzE7HgpR-ZNQr5ClU",
+									"type": "string"
+								}
+							]
 						},
 						"method": "POST",
 						"header": [],
@@ -380,7 +449,22 @@
 								}
 							}
 						},
-						"url": "http://127.0.0.1:3000/api/registration/"
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/registration/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"registration",
+								""
+							]
+						}
 					},
 					"response": []
 				},
@@ -401,7 +485,22 @@
 								}
 							}
 						},
-						"url": "http://127.0.0.1:3000/api/registration/1"
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/registration/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"registration",
+								"1"
+							]
+						}
 					},
 					"response": []
 				},
@@ -410,9 +509,13 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbE5hbWUiOiJBZG1pbmlzdHJhdGV1ciIsInJvbGUiOiJBZG1pbiIsInN0YXR1cyI6dHJ1ZSwiaWF0IjoxNzM0MDQ5NDc2LCJleHAiOjE3MzQwODU0NzZ9.HzA7b-E62bI_Qw1apYWw0xiboNBzE7HgpR-ZNQr5ClU"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbE5hbWUiOiJBZG1pbmlzdHJhdGV1ciIsInJvbGUiOiJBZG1pbiIsInN0YXR1cyI6dHJ1ZSwiaWF0IjoxNzM0MDQ5NDc2LCJleHAiOjE3MzQwODU0NzZ9.HzA7b-E62bI_Qw1apYWw0xiboNBzE7HgpR-ZNQr5ClU",
+									"type": "string"
+								}
+							]
 						},
 						"method": "DELETE",
 						"header": [],
@@ -425,7 +528,22 @@
 								}
 							}
 						},
-						"url": "http://127.0.0.1:3000/api/registration/4"
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/registration/4",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"registration",
+								"4"
+							]
+						}
 					},
 					"response": []
 				}
@@ -442,7 +560,22 @@
 						},
 						"method": "GET",
 						"header": [],
-						"url": "http://127.0.0.1:3000/api/payments/"
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/payments/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"payments",
+								""
+							]
+						}
 					},
 					"response": []
 				},
@@ -454,7 +587,22 @@
 						},
 						"method": "GET",
 						"header": [],
-						"url": "http://127.0.0.1:3000/api/payment/1"
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/payment/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"payment",
+								"1"
+							]
+						}
 					},
 					"response": []
 				},
@@ -463,9 +611,13 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbE5hbWUiOiJBZG1pbmlzdHJhdGV1ciIsInJvbGUiOiJBZG1pbiIsInN0YXR1cyI6dHJ1ZSwiaWF0IjoxNzM0MDQ5NDc2LCJleHAiOjE3MzQwODU0NzZ9.HzA7b-E62bI_Qw1apYWw0xiboNBzE7HgpR-ZNQr5ClU"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbE5hbWUiOiJBZG1pbmlzdHJhdGV1ciIsInJvbGUiOiJBZG1pbiIsInN0YXR1cyI6dHJ1ZSwiaWF0IjoxNzM0MDQ5NDc2LCJleHAiOjE3MzQwODU0NzZ9.HzA7b-E62bI_Qw1apYWw0xiboNBzE7HgpR-ZNQr5ClU",
+									"type": "string"
+								}
+							]
 						},
 						"method": "POST",
 						"header": [],
@@ -478,7 +630,22 @@
 								}
 							}
 						},
-						"url": "http://127.0.0.1:3000/api/payment/"
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/payment/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"payment",
+								""
+							]
+						}
 					},
 					"response": []
 				},
@@ -499,7 +666,22 @@
 								}
 							}
 						},
-						"url": "http://127.0.0.1:3000/api/payment/1"
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/payment/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"payment",
+								"1"
+							]
+						}
 					},
 					"response": []
 				},
@@ -508,9 +690,13 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbE5hbWUiOiJBZG1pbmlzdHJhdGV1ciIsInJvbGUiOiJBZG1pbiIsInN0YXR1cyI6dHJ1ZSwiaWF0IjoxNzM0MDQ5NDc2LCJleHAiOjE3MzQwODU0NzZ9.HzA7b-E62bI_Qw1apYWw0xiboNBzE7HgpR-ZNQr5ClU"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZnVsbE5hbWUiOiJBZG1pbmlzdHJhdGV1ciIsInJvbGUiOiJBZG1pbiIsInN0YXR1cyI6dHJ1ZSwiaWF0IjoxNzM0MDQ5NDc2LCJleHAiOjE3MzQwODU0NzZ9.HzA7b-E62bI_Qw1apYWw0xiboNBzE7HgpR-ZNQr5ClU",
+									"type": "string"
+								}
+							]
 						},
 						"method": "DELETE",
 						"header": [],
@@ -523,7 +709,22 @@
 								}
 							}
 						},
-						"url": "http://127.0.0.1:3000/api/payment/2"
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/payment/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"payment",
+								"2"
+							]
+						}
 					},
 					"response": []
 				}
