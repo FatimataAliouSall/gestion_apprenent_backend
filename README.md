@@ -23,13 +23,13 @@ Suivez ces étapes pour configurer le projet sur votre machine locale :
 ### **Clonez le repository :**
 
 ```bash
-git clone https://github.com/Fatoumacisse99/gestion_apprenants_backend.git
+git clone https://github.com/FatimataAliouSall/gestion_apprenent_backend.git
 ```
 
 ### **Accédez au dossier du projet :**
 
 ```bash
-cd gestion_apprenants_backend
+cd gestion_apprenent_backend
 ```
 
 ### **Installez les dépendances :**
@@ -86,7 +86,7 @@ Vous pouvez consulter la documentation des endpoints et tester les différents p
 
 ## Auteur
 
-[Harouna Adama Traoré](https://github.com/Fatoumacisse99/)
+### [Fatimata Aliou Sall](https://github.com/FatimataAliouSall)
 
 
 
